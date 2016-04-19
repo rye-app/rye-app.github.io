@@ -5,3 +5,19 @@ html, body {
   background-color: rgb(22,201,181);
   color: white;
 }
+
+h1 {
+  font-size: 7em
+}
+
+.app-name {
+  margin-top: 100px;
+}
+
+.center {
+  text-align: center;
+}
+
+.description {
+  margin-top: 100px;
+}
