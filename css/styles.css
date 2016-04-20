@@ -11,7 +11,7 @@ h1 {
 }
 
 .app-name {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .center {
@@ -19,5 +19,11 @@ h1 {
 }
 
 .description {
-  margin-top: 100px;
+  margin-top: 50px;
+}
+
+.description-paragraph {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 150%;
 }
