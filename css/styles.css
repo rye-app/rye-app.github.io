@@ -41,24 +41,34 @@ html, body {
 
 ul, li {
   list-style: none;
+  display: inline;
 }
 
 nav {
   margin-top: 40px;
+  text-align: right;
+}
+
+li {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 li a {
   font-size: 140%;
   border-bottom: 2px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #1684C9;
 }
 
 a, a:hover {
   text-decoration: none;
 }
 
-a:hover {
+/*a:hover {
   border-bottom: 2px solid #1684C9;
-}
+}*/
 
 .release {
   background-color:  #1684C9;
@@ -66,7 +76,7 @@ a:hover {
   background: -o-linear-gradient(#16C9B5, #1684C9) no-repeat;
   background: -moz-linear-gradient(#16C9B5, #1684C9) no-repeat;
   background: linear-gradient(#16C9B5, #1684C9) no-repeat;
-  /*color: white;*/
+  color: white;
 }
 
 .release body {
@@ -75,10 +85,11 @@ a:hover {
 
 .release a, .release a:hover {
   color: white;
+  border-color: white;
 }
 
 .presentation {
-  min-height: 90%;
+  min-height: 85%;
   /*padding-top: 200px;*/
   position: relative;
   text-align: center;
@@ -92,4 +103,18 @@ a:hover {
 
 .blue-text {
   color: #1684C9;
+}
+
+.team {
+  margin-top: 50px;
+}
+
+.team img {
+  border-radius: 1000px;
+}
+
+.a-home {
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #1684C9;
 }

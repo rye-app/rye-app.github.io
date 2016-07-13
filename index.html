@@ -28,12 +28,15 @@
     <meta name="description" content="Rye app for iphone and android. Send social notifications to your friends.">
   </head>
   <body>
-    <div class="col-md-3 col-md-offset-9">
-      <nav>
-        <ul>
-          <li><a href="/ios-release-notes.html">iOS release notes</a></li>
-        </ul>
-      </nav>
+    <div class="container">
+      <div class="row-fluid">
+        <nav>
+          <ul>
+            <li><a class="home" href="/index.html">Home</a></li>
+            <li><a href="/team.html">The team</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <div class="presentation">
       <p>Send a notification to</p>
@@ -55,28 +58,32 @@
         </a>
       </div>
     </div>
-    <div class="row">
+    <div class="container">
+      <a href="/ios-release-notes.html">iOS release notes</a>
     </div>
     <script>
-      var interval = 3000;
-      var who = ["to your friends", "to your crush", "to your mates", "to your siblings", "to your coworkers"];
-      var when = ["you went for a run", "you miss them", "you want to go out", "you're hungry", "you won", "you worked out"];
-      window.setTimeout(function () {
-        var timerWho = setInterval(function() {
-          var index = Math.floor((Math.random() * who.length) + 1);
-          $("#who").text(who[index]);
+      function animatePresentation() {
+        var interval = 3000;
+        var who = ["to your friends", "to your crush", "to your mates", "to your siblings", "to your coworkers"];
+        var when = ["you went for a run", "you miss them", "you want to go out", "you're hungry", "you won", "you worked out"];
+        window.setTimeout(function () {
+          var timerWho = setInterval(function() {
+            var index = Math.floor((Math.random() * who.length) + 1);
+            $("#who").text(who[index]);
+          }, interval);
+        }, interval/2);
+        var timerWhen = setInterval(function() {
+          var index = Math.floor((Math.random() * when.length) + 1);
+          $("#when").text(when[index]);
         }, interval);
-      }, interval/2);
-      var timerWhen = setInterval(function() {
-        var index = Math.floor((Math.random() * when.length) + 1);
-        $("#when").text(when[index]);
-      }, interval);
+      }
 
       $(function() {
           $('.presentation').css({
               'position' : 'relative',
               'top' : '25%'
           });
+          animatePresentation();
       });
     </script>
     <script>
