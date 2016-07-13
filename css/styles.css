@@ -118,3 +118,21 @@ a, a:hover {
   border-radius: 0;
   border-bottom: 2px solid #1684C9;
 }
+
+.rye-title {
+  text-align: center;
+  font-size: 500%;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.footer {
+  background-color: #22313F;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer a {
+  color: white;
+}
